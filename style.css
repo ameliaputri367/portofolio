@@ -1,0 +1,415 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-family: "Poppins",sans-serif ;
+    height: 100vh; 
+    background-image: url(cihui.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 5%;
+    background-attachment: fixed;
+  }
+
+
+.container {
+    position: relative;
+     width: 100%;
+     height: 80vh;
+     padding: 10px 1%;
+    background: rgba(255, 255, 255, .1);
+    border-radius: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ 
+
+}
+
+header{
+    position: absolute;
+    top: 5%;
+    width: 80%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+    border-bottom: 2px solid transparent;
+    transition: .5s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    border-color: #fff;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+    padding: 50px 5% 0;
+    color: #fff;
+}
+
+.home-detail h1{
+    font-size: 35px;
+    line-height: 0;
+}
+
+.home-detail h2{
+    font-size: 30px;
+}
+
+.home-detail p{
+    margin: 10px 0 5% ;
+}
+
+.home-detail .download-social {
+    display: flex;
+    align-items: center;
+   
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 40px ;
+    box-shadow: 0 0 10px #fff;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .5s;
+}
+.btn:hover {
+    background: transparent;
+    box-shadow: none;
+    color: #fff;
+}
+
+.home-detail .social-icons{
+    margin-left: 20px;
+}
+
+.home-detail .social-icons a{
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 100%;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 8px;
+    transition: .5s;
+}
+
+.home-detail .social-icons a:hover {
+    background: #fff;
+    box-shadow: 0 0 10px #fff;
+    color: #333;
+}
+
+.home-img .img-box {
+    position: relative;
+    width: 25vw;
+    height: 25vw;
+    border: 2px solid #f1f5f8;
+    border-radius: 100%;
+    box-shadow: 0 0 20px #f9f8fa;
+    overflow: hidden;
+}
+
+.home-img .img-box img{
+    position: absolute;
+    top: 20px;
+    display: block;
+    width: 115%;
+    object-fit: cover;
+}
+
+/*bagian about*/
+.about{
+    font-family: Arial, sans-serif;
+    font-family: "Poppins",sans-serif ;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    padding: 10px 1%;
+    background: rgba(255, 255, 255, .1);
+    border-radius: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+
+.about-container {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+}
+.about-img {
+  flex: 1;
+  text-align: center;
+}
+
+.about-img img {
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  transition: transform 0.5s;
+}
+
+.about-img img:hover {
+  transform: scale(1.05);
+}
+
+.about h2{ /*judul*/
+    position: relative;
+    margin-left: 40%;
+    font-size: 32px;
+    margin-bottom: 20px;
+    
+    
+}
+
+.about p{
+    margin: 1% auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-family: "Poppins",sans-serif ;
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+
+}
+
+.about .highlight{
+    text-align: left;
+    padding-left: 20px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.about h3{/*experience*/
+    padding-left: 5px;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+/*bagian portofolio*/
+.portofolio{
+    font-family: Arial, sans-serif;
+    font-family: "Poppins",sans-serif ;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    min-height: 85vh;
+    padding: 10px 1%;
+    background: rgba(255, 255, 255, .1);
+    border-radius: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* ✅ tidak ditekan ke bawah */
+    margin: 40px auto 80px auto; /* ✅ jarak bawah */
+}
+.portofolio-text {
+  flex: 1;
+}
+.portofolio h2{
+    position: relative;
+    margin-left:38%;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.portofolio p{
+    padding-left: 5px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    font-family: "Poppins",sans-serif ;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: -10px;
+
+}
+/*design2d*/
+.portofolio .design-2D{
+    font-size: 15px;
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px 15px;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 30px ;
+    box-shadow: 0 0 10px #fff;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: left;
+}
+
+.portfolio-text p {
+    position: relative;
+    top: -25px;
+    font-size: 14px;
+    margin-left: 40%;
+}
+
+.portfolio-image {
+  flex: 1;
+  text-align: center;
+}
+
+.portfolio-image img {
+    position: relative;
+    max-width: 15%;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #fff;
+    margin-left: 10%;
+    top: -35px;
+    margin-top: 20px;
+  
+}
+
+
+.portofolio .design-3D{
+    display: inline-block;
+    padding: 5px 15px;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 40px ;
+    box-shadow: 0 0 10px #fff;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 60%;
+}
+
+.portfolio-text3D p {
+    position: relative;
+    top: -25px;
+    font-size: 14px;
+    max-width: 450px;
+}
+
+.portofolio .game-unity{
+    display: inline-block;
+    padding: 5px 15px;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 40px ;
+    box-shadow: 0 0 10px #fff;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+
+
+
+
+/*bagian skills*/
+.skills{
+    font-family: Arial, sans-serif;
+    font-family: "Poppins",sans-serif ;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    padding: 10px 1%;
+    background: rgba(255, 255, 255, .1);
+    border-radius: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+
+.skills h2{
+    position: relative;
+    margin-left:40%;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.skills p{
+    padding-left: 5px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.skills-text li{
+    font-size: 20px;
+    margin-top: 25px;
+}
+.skills-text p{
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+/*bagian contact*/
+.contact{
+    font-family: Arial, sans-serif;
+    font-family: "Poppins",sans-serif ;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    padding: 10px 1%;
+    background: rgba(255, 255, 255, .1);
+    border-radius: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+
+.contact h2{
+    position: relative;
+    margin-left:40%;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.tahun{
+    color: #fff;
+    margin-left: 500px;
+}
